@@ -1,4 +1,4 @@
-import { GitHubLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
+import { GitHubLogoIcon } from '@radix-ui/react-icons'
 import { buttonVariants } from '@/components/ui/button'
 import {TelegramIcon} from './icons/TelegramIcon'
 
