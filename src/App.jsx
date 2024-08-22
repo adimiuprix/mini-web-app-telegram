@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <TonConnectUIProvider
-        manifestUrl="https://mini-web-app-telegram.vercel.app/public/tonconnect-manifest.json"
+        manifestUrl="/tonconnect-manifest.json"
         uiPreferences={{ theme: THEME.LIGHT }}
         walletsListConfiguration={{
           includeWallets: [
