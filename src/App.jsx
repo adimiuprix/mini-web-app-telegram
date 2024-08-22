@@ -7,16 +7,14 @@ function App() {
   return (
     <>
       <TonConnectUIProvider
-        manifestUrl="https://ton-connect.github.io/demo-dapp-with-react-ui/tonconnect-manifest.json"
+        manifestUrl="https://mini-web-app-telegram.vercel.app/public/tonconnect-manifest.json"
         uiPreferences={{ theme: THEME.LIGHT }}
         walletsListConfiguration={{
           includeWallets: [
             {
               appName: "mini-web-app",
               name: "Connect to TON Network",
-              imageUrl: "https://wallet.tg/images/logo-288.png",
-              aboutUrl: "https://wallet.tg/",
-              universalLink: 'https://t.me/TobiWalletBot/wallet',
+              imageUrl: "https://mini-web-app-telegram.vercel.app/favicon.svg",
               bridgeUrl: "https://bridge.tonapi.io/bridge",
               platforms: ["ios", "android", "macos", "windows", "linux"]
             }
