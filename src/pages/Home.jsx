@@ -52,21 +52,6 @@ function Home() {
 
               </TonConnectUIProvider>
 
-              <nav class="flex fixed bottom-0 left-0 justify-around items-center px-4 py-2 w-full bg-blue-500 rounded-t-3xl border-t border-sky-700 shadow-lg">
-                <a href="/home" class="flex flex-col items-center text-white transition duration-300 hover:text-pink-200">
-                    <span class="text-3xl">🏠</span>
-                    <span class="text-xs font-semibold">Home</span>
-                </a>
-                <a href="/account" class="flex flex-col items-center text-white transition duration-300 hover:text-pink-200">
-                    <span class="text-3xl">👤</span>
-                    <span class="text-xs font-semibold">Account</span>
-                </a>
-                <a href="/reff" class="flex flex-col items-center text-white transition duration-300 hover:text-pink-200">
-                    <span class="text-3xl">🔗</span>
-                    <span class="text-xs font-semibold">Reff</span>
-                </a>
-              </nav>
-
           </div>
         </div>
         
