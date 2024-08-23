@@ -4,16 +4,19 @@ import Account from './pages/Account'
 import Referral from './pages/Referral'
 
 function App() {
+  const url = new URL(window.location.href)
+  console.log(url)
+  
   return (
     <>
       <BrowserRouter>
-      
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="account" element={<Account />} />
           <Route path="reff" element={<Referral />} />
         </Routes>
-      
+
         <nav class="flex fixed bottom-0 left-0 justify-around items-center px-4 py-2 w-full bg-blue-500 rounded-t-3xl border-t border-sky-700 shadow-lg">
             <Link to="/" class="flex flex-col items-center text-white transition duration-300 hover:text-pink-200">
               <span class="text-3xl">🏠</span>
