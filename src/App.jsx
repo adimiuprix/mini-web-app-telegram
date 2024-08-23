@@ -4,8 +4,6 @@ import Account from './pages/Account'
 import Referral from './pages/Referral'
 
 function App() {
-  const url = new URL(window.location.href)
-  console.log(url)
   
   return (
     <>
