@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
-          <div class="px-3 py-36">
+          <div class="px-3 py-10">
             
               <TonConnectUIProvider
                 manifestUrl="https://mini-web-app-telegram.vercel.app/tonconnect-manifest.json"

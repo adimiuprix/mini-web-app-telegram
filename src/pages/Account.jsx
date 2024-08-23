@@ -4,7 +4,7 @@ function Account() {
   return (
     <>
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
-          <div class="px-3 py-36">
+          <div class="px-3 py-10">
             
             <div class="p-8 mx-auto mt-10 max-w-screen-md bg-white bg-opacity-10 rounded-2xl border border-opacity-30 shadow-lg backdrop-blur-sm transition-transform duration-300 transform hover:scale-105">
               <div class="text-3xl font-bold text-center text-blue-900">Detail Akun</div>

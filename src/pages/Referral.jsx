@@ -2,7 +2,7 @@ function Referral() {
   return (
     <>
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
-          <div class="px-3 py-36">
+          <div class="px-3 py-10">
             
             <div class="p-10 mx-auto max-w-screen-lg bg-white bg-opacity-10 rounded-3xl border border-white border-opacity-20 shadow-xl backdrop-blur-lg">
               <div class="text-center">
