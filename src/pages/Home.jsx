@@ -3,10 +3,14 @@ import { buttonVariants } from '../components/ui/button'
 import { TelegramIcon } from '../icons/TelegramIcon'
 import { TonConnectButton } from '@tonconnect/ui-react'
 import { useIsConnectionRestored } from '@tonconnect/ui-react'
+import { useTonAddress } from '@tonconnect/ui-react'
 
 function Home() {
   // Mengecek apakah telah conect atau belum
   const isConnect = useIsConnectionRestored()
+
+  // Render alamat wallet
+  const Address = useTonAddress()
 
   return (
     <>
