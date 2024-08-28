@@ -1,15 +1,17 @@
 import { buttonVariants } from '../components/ui/button'
-import { retrieveLaunchParams } from '@telegram-apps/sdk'
+import WebApp from '@twa-dev/sdk'
+
+const firstName = WebApp.initDataUnsafe.user?.first_name
 
 function Account() {
-  const { initDataRaw, initData } = retrieveLaunchParams()
+
   return (
     <>
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
           <div class="px-3 py-10">
             
             <div class="p-8 mx-auto mt-10 max-w-screen-md bg-white bg-opacity-10 rounded-2xl border border-opacity-30 shadow-lg backdrop-blur-sm transition-transform duration-300 transform hover:scale-105">
-              <div class="text-3xl font-bold text-center text-blue-900">Detail Akun</div>
+              <div class="text-3xl font-bold text-center text-blue-900">Detail Akun {firstName ? `${firstName}, you` : "You"}</div>
               <div class="mt-6">
                 <p class="text-lg font-medium text-blue-900"><strong>Nama:</strong> <span class="text-blue-900">Adi Miuprix</span></p>
                 <p class="mt-4 text-lg font-medium text-blue-900"><strong>Email:</strong> <span class="text-blue-900">adi@miuprix.com</span></p>
