@@ -1,8 +1,9 @@
 import { useTonAddress } from '@tonconnect/ui-react'
+import { initMiniApp } from '@telegram-apps/sdk'
 
 const Referral = () => {
   const Address = useTonAddress()
-  console.log(Address)
+  
   return (
     <>
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>

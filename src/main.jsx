@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { THEME, TonConnectUIProvider } from '@tonconnect/ui-react'
-import WebApp from '@twa-dev/sdk'
-WebApp.ready()
+import { initMiniApp } from '@telegram-apps/sdk'
+
+const [miniApp] = initMiniApp()
+miniApp.ready()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -5,8 +5,6 @@ import { TonConnectButton } from '@tonconnect/ui-react'
 import { useIsConnectionRestored } from '@tonconnect/ui-react'
 import { useTonAddress } from '@tonconnect/ui-react'
 
-import { WebApp } from '@twa-dev/sdk'
-
 function Home() {
   // Mengecek apakah telah conect atau belum
   const isConnect = useIsConnectionRestored()
@@ -14,9 +12,6 @@ function Home() {
   // Render alamat wallet
   const Address = useTonAddress()
 
-  const initData = WebApp.initDataUnsafe
-  setUserName(initData.user?.username || 'No Username');
-  
   return (
     <>
       <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
@@ -28,7 +23,7 @@ function Home() {
             <div class="text-center">
               <a class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80" href="https://t.me/augom" target="_blank" rel="noopener">
                 <TelegramIcon />
-                <p className='pl-2'>Follow Adi Miuprix on telegram {userName}</p>
+                <p className='pl-2'>Follow Adi Miuprix on telegram</p>
               </a>
             </div>
             <div class="mt-3 text-4xl font-bold tracking-tight text-center">
