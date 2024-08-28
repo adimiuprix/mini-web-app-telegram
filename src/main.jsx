@@ -5,10 +5,17 @@ import './index.css'
 import { THEME, TonConnectUIProvider } from '@tonconnect/ui-react'
 import WebApp from '@twa-dev/sdk'
 
-WebApp.expand()
-WebApp.SettingsButton.hide()
-WebApp.enableClosingConfirmation()
+// Menyiapakan app
 WebApp.ready()
+
+// Expanding app
+WebApp.expand()
+
+// Menyembunyikan tombo pengaturan
+WebApp.SettingsButton.hide()
+
+// Kalau mau close app ada pertanyaan biar gak langsung close
+WebApp.enableClosingConfirmation()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
