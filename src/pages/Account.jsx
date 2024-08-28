@@ -1,6 +1,8 @@
 import { buttonVariants } from '../components/ui/button'
+import { retrieveLaunchParams } from '@telegram-apps/sdk'
 
 function Account() {
+  const { initDataRaw, initData } = retrieveLaunchParams()
   return (
     <>
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
