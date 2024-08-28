@@ -1,5 +1,5 @@
 import { useTonAddress } from '@tonconnect/ui-react'
-import { initMiniApp } from '@telegram-apps/sdk'
+import { useLaunchParams } from '@telegram-apps/sdk'
 
 const Referral = () => {
   const Address = useTonAddress()
