@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Home from './pages/Home'
 import Account from './pages/Account'
 import Referral from './pages/Referral'
+import WebApp from '@twa-dev/sdk'
+
+WebApp.setHeaderColor('#1a1a1a')
 
 function App() {
   

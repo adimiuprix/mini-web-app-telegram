@@ -7,7 +7,7 @@ import WebApp from '@twa-dev/sdk'
 
 // Menyiapakan app
 WebApp.ready()
-WebApp.setHeaderColor('#000000');
+
 // Expanding app
 WebApp.expand()
 
