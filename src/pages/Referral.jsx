@@ -12,7 +12,7 @@ const Referral = () => {
     const param = WebApp.initDataUnsafe.start_param
     setStartParam(param)
   }, [])
-
+  
   return (
     <>
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
