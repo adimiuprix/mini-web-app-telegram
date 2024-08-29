@@ -14,7 +14,7 @@ function Account() {
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
           <div class="px-3 py-10">
             
-            <div class="p-8 mx-auto mt-10 max-w-screen-md bg-white bg-opacity-10 rounded-2xl border border-opacity-30 shadow-lg backdrop-blur-sm transition-transform duration-300 transform hover:scale-105">
+            <div class="p-10 mx-auto max-w-screen-lg bg-white bg-opacity-10 rounded-3xl border border-white border-opacity-20 shadow-xl backdrop-blur-lg">
               <div class="text-3xl font-bold text-center text-blue-900">Detail Akun</div>
               <div class="mt-6">
                 <p class="text-lg font-medium text-blue-900"><strong>Id user:</strong> <span class="text-blue-900">{idUser}</span></p>
