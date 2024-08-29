@@ -1,8 +1,18 @@
+import { useEffect, useState } from 'react'
+import WebApp from '@twa-dev/sdk'
 import { useTonAddress } from '@tonconnect/ui-react'
 
 const Referral = () => {
+
   const Address = useTonAddress()
   
+  const [startParam, setStartParam] = useState('')
+
+  useEffect(() => {
+    const param = WebApp.initDataUnsafe.start_param
+    setStartParam(param)
+  }, [])
+
   return (
     <>
         <div className='h-screen bg-gradient-to-b from-sky-300 to-transparent'>
@@ -13,7 +23,7 @@ const Referral = () => {
                 <h1 class="text-4xl font-bold text-blue-900">Program Referral</h1>
                 <p class="mt-4 text-lg text-gray-800">Ajak teman-temanmu bergabung dan dapatkan reward menarik!</p>
               </div>
-
+              <p>Start Param: {startParam}</p>
               <div class="mt-10">
                 <div class="flex flex-col items-center">
                   <label for="referralLink" class="mb-2 text-lg text-black">Link Referral Anda</label>

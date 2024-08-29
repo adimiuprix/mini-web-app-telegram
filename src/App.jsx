@@ -7,8 +7,7 @@ import WebApp from '@twa-dev/sdk'
 WebApp.setHeaderColor('#1a1a1a')
 
 function App() {
-  const initData = WebApp.initData
-  console.log(initData)
+
   return (
     <>
       <BrowserRouter>
