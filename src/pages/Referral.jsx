@@ -23,12 +23,12 @@ const Referral = () => {
                 <h1 class="text-4xl font-bold text-blue-900">Program Referral</h1>
                 <p class="mt-4 text-lg text-gray-800">Ajak teman-temanmu bergabung dan dapatkan reward menarik!</p>
               </div>
-              <p>Start Param: {startParam}</p>
+
               <div class="mt-10">
                 <div class="flex flex-col items-center">
                   <label for="referralLink" class="mb-2 text-lg text-black">Link Referral Anda</label>
                   <div class="flex items-center w-full max-w-lg bg-gray-800 bg-opacity-50 rounded-full shadow-lg">
-                    <input type="text" id="referralLink" value="https://yourapp.com/referral/AdiMiuprix" readonly class="px-4 py-2 w-full text-white bg-transparent rounded-l-full focus:outline-none" />
+                    <input type="text" id="referralLink" value={`https://t.me/pepeadijs_bot/PepeAdiJs?startapp=${startParam}`} readonly class="px-4 py-2 w-full text-white bg-transparent rounded-l-full focus:outline-none" />
                     <button onclick="copyReferralLink()" class="px-4 py-2 text-white bg-blue-500 rounded-r-full transition-colors duration-300 hover:bg-blue-400">Salin</button>
                   </div>
                 </div>
