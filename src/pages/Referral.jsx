@@ -37,9 +37,6 @@ const Referral = () => {
                   <p class="text-lg text-gray-800">Bagikan link ini kepada teman-temanmu dan dapatkan reward ketika mereka mendaftar menggunakan link tersebut.</p>
                 </div>
 
-                <div class="flex justify-center mt-10">
-                  <button class="px-6 py-3 text-lg font-semibold text-white bg-green-500 rounded-full shadow-lg transition-transform duration-300 hover:bg-green-400">Lihat Reward</button>
-                </div>
               </div>
             </div>
 
